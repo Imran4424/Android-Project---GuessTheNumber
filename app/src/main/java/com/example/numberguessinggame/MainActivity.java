@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         submitButton = (Button) findViewById(R.id.submitButton);
 
         int  min = 1;
-        int max = 1000;
+        int max = 100;
         int range = max - min + 1;
         number = (int) (Math.random() * range) + min;
     }
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int inputNumber = parseInteger(inputTextField.getText().toString());
 
         if(inputNumber == number) {
-            Toast.makeText(getApplicationContext(), "Congratulations, You Won", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Congratulations, You Won!!!", Toast.LENGTH_LONG).show();
 
             Intent intent = getIntent();
             finish();

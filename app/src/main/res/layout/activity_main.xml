@@ -15,7 +15,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="35dp"
         android:ems="10"
-        android:hint="Number from 1 to 1000"
+        android:hint="Number from 1 to 100"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/submitButton"
