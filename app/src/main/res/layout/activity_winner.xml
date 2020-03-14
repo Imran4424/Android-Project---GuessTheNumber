@@ -7,17 +7,20 @@
     tools:context=".Winner">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/playAgainButton"
         android:layout_width="280dp"
         android:layout_height="75dp"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="131dp"
+        android:background="#4CAF50"
+        android:onClick="playAgain"
         android:text="Play Again"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -26,9 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/Congrats" />
@@ -37,14 +40,14 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="You Win"
         android:textAlignment="center"
         android:textSize="55sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/playAgainButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </android.support.constraint.ConstraintLayout>
