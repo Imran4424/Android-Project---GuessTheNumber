@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Winner extends AppCompatActivity {
+public class WinnerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +14,6 @@ public class Winner extends AppCompatActivity {
     }
 
     public void playAgain(View v) {
-        startActivity(new Intent(Winner.this, MainActivity.class));
+        startActivity(new Intent(WinnerActivity.this, MainActivity.class));
     }
 }

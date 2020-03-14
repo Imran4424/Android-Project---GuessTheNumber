@@ -32,11 +32,7 @@ public class MainActivity extends AppCompatActivity {
         int inputNumber = parseInteger(inputTextField.getText().toString());
 
         if(inputNumber == number) {
-            Toast.makeText(getApplicationContext(), "Congratulations, You Won!!!", Toast.LENGTH_LONG).show();
-
-            Intent intent = getIntent();
-            finish();
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, WinnerActivity.class));
         } else if(inputNumber > number) {
             Toast.makeText(getApplicationContext(), "Input is Higher", Toast.LENGTH_SHORT).show();
         } else {
