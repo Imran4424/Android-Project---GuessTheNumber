@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         // Initializing UI variables
         inputTextField = (EditText) findViewById(R.id.inputEditText);
         submitButton = (Button) findViewById(R.id.submitButton);
+        indicatorText = (TextView) findViewById(R.id.indicatorText);
+        indicatorText.setText("Your Number is Empty");
 
         int  min = 1;
         int max = 100;
@@ -36,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
         if(inputNumber == number) {
             startActivity(new Intent(MainActivity.this, WinnerActivity.class));
         } else if(inputNumber > number) {
+            indicatorText.setText("Your Number is Higher");
             Toast.makeText(getApplicationContext(), "Your Number is Higher", Toast.LENGTH_SHORT).show();
         } else {
+            indicatorText.setText("Your number is Lower");
             Toast.makeText(getApplicationContext(), "Your Number is Lower", Toast.LENGTH_SHORT).show();
         }
 
