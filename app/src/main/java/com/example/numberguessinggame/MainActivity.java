@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button submitButton;
     EditText inputTextField;
+    TextView indicatorText;
     int number;
 
     @Override
@@ -34,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
         if(inputNumber == number) {
             startActivity(new Intent(MainActivity.this, WinnerActivity.class));
         } else if(inputNumber > number) {
-            Toast.makeText(getApplicationContext(), "Input is Higher", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Your Number is Higher", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(getApplicationContext(), "Input is Lower", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Your Number is Lower", Toast.LENGTH_SHORT).show();
         }
 
     }
